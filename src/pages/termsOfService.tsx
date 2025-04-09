@@ -92,7 +92,6 @@ function TermsPage() {
         For questions, email support@furelic.com.
         </span>
       </li>
-
       </ol>
       </Container>
         <Footer></Footer>
