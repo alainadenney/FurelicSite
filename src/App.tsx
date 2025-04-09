@@ -9,8 +9,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="terms-of-service" element={<TermsPage />}/>
-        <Route path="privacy-policy" element={<PrivacyPage />}/>
+        <Route path="/terms-of-service" element={<TermsPage />}/>
+        <Route path="/privacy-policy" element={<PrivacyPage />}/>
       </Routes>
     </Router>
   );
