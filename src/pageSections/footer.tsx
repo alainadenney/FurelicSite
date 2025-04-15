@@ -28,16 +28,36 @@ const Footer = () => {
         © {new Date().getFullYear()} Furelic. All rights reserved.
       </Typography>
       <Box
-      sx={{
-        display:"flex",
-        gap: 1
-      }}>
-      <Typography variant="body2" color="secondary.contrastText">
-        <Link to="/terms-of-service" style={linkStyle}>Terms</Link>
-      </Typography>
-      <Typography variant="body2" color="secondary.contrastText">
-        <Link to="/privacy-policy" style={linkStyle}>Privacy</Link>
-      </Typography>
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          mx: 3,
+        }}
+      >
+        <Box sx={{ py: 1.5 }}>
+          <img src="public\Furelic_Logo_SolidWhite.png" height="50em"></img>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+          }}
+        >
+          <Typography variant="body2" color="secondary.contrastText">
+            <Link to="/terms-of-service" style={linkStyle}>
+              Terms of Service
+            </Link>
+          </Typography>
+          <Typography variant="body2" color="secondary.contrastText">
+            <Link to="/privacy-policy" style={linkStyle}>
+              Privacy Policy
+            </Link>
+          </Typography>
+        </Box>
+        <Typography variant="body2" color="secondary.contrastText">
+          © {new Date().getFullYear()} Furelic. All rights reserved.
+        </Typography>
       </Box>
       </Box>
     </Box>
